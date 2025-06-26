@@ -1,6 +1,7 @@
 from classes.hanoi import *
 
-setup = Hanoi(5)
+n = input("Nbr de pièces? :> ")
+setup = Hanoi(int(n))
 setup.jouer()
 setup.text.config(
     text="                                                            Terminé                                                            ",
